@@ -1,4 +1,4 @@
-My Awesome Book
+ECMAScript 6 Features 讀後心得
 =======
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+[參考資料](https://github.com/lukehoban/es6features)
