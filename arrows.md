@@ -27,7 +27,7 @@ function Car() {
 function Car() {
     this.speed = 0;
     
-    setInterval(() => this.speed++, 1000);
+    setInterval(() => { this.speed++ }, 1000);
 }
 ```
  
