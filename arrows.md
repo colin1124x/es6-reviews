@@ -23,10 +23,11 @@ function Car() {
 ```
 
 ```js
-// ES6 寫法
+// ES6 Arrows 寫法
 function Car() {
     this.speed = 0;
     
+    // 註: 儘管在ES6模式下仍必須使用 Arrows 宣告匿名函式才有此特性
     setInterval(() => { this.speed++ }, 1000);
 }
 ```
