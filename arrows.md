@@ -7,7 +7,7 @@
  
 舉例
 ```js
-// 建構函式
+// 舊寫法
 function Car() {
     
     var me = this;
@@ -19,6 +19,15 @@ function Car() {
         me.speed += 1;
     }, 1000);
     
+}
+```
+
+```js
+// ES6 寫法
+function Car() {
+    this.speed = 0;
+    
+    setInterval(() => this.speed++, 1000);
 }
 ```
  
