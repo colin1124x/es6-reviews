@@ -1,3 +1,4 @@
 # Summary
 
-* [arrows](arrows.md)
+* [Arrows](arrows.md)
+* [Classes](classes.md)
