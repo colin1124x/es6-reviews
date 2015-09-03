@@ -10,4 +10,6 @@ var o = {
         console.log(this.name)
     }
 }
+
+o.showName();// oo
 ```
