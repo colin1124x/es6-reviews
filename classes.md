@@ -12,6 +12,7 @@ var o = {
 }
 
 o.showName();// oo
+console.log(o.hasOwnProperty('name')); // true
 ```
 
 ### 建構函式
