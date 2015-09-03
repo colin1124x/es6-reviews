@@ -45,7 +45,7 @@ O.prototype = {
 var o = new O();
 o.showName();
 console.log(o.hasOwnProperty('name')); // false
-console.log(o._constructor.prototype.hasOwnProperty('name')); // true
+
 ```
 
 ### ES6 Classes
