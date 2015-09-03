@@ -25,4 +25,8 @@ function O(){
 
 var o = new O();
 o.showName();
+console.log(o.hasOwnProperty('name')); // true
+
 ```
+
+### 建構函式
