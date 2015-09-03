@@ -29,4 +29,18 @@ console.log(o.hasOwnProperty('name')); // true
 
 ```
 
-### 建構函式
+### 建構函式 + 原型擴充
+```js
+function O(){}
+O.prototype = {
+    name: 'oo',
+    showName: function(){
+        console.log(this.name)
+    }
+};
+
+var o = new O();
+o.showName();
+console.log(o.hasOwnProperty('name')); // false
+```
+
