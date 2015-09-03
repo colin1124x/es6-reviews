@@ -44,3 +44,20 @@ o.showName();
 console.log(o.hasOwnProperty('name')); // false
 ```
 
+### ES6 Classes
+```js
+// 實做建構函式
+class O {
+    construct(){
+        this.name = 'oo';
+        this.showName = function(){
+            console.log(this.name)
+        }
+    }
+}
+
+var o = new O();
+o.showName();
+console.log(o.hasOwnProperty('name'));
+
+```
