@@ -3,17 +3,13 @@
 物件實字擴充
 
 ```js
-// 舊寫法
+// 舊寫法 1
 var o = {
-    a: 'a',
-    b: 'b',
-    c: 'c'
+    sayHello: function(){}
 }
 
 var o = {
-    a,
-    b,
-    c
+    sayHello(){}
 }
 
 console.log(o)
