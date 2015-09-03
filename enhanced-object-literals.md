@@ -6,11 +6,23 @@
 // 舊寫法 1
 var o = {
     sayHello: function(){}
-}
+};
 
+// ES6
 var o = {
     sayHello(){}
-}
+};
 
-console.log(o)
+// 舊寫法 2
+function sayHello(){}
+var o = {
+    sayHello: sayHello
+};
+
+// ES6
+function sayHello(){}
+var o = {
+    sayHello
+};
+
 ```
