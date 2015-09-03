@@ -16,6 +16,7 @@ o.showName();// oo
 
 ### 建構函式
 ```js
+
 function O(){
     this.name = 'oo';
     this.showName = function(){
@@ -31,6 +32,7 @@ console.log(o.hasOwnProperty('name')); // true
 
 ### 建構函式 + 原型擴充
 ```js
+
 function O(){}
 O.prototype = {
     name: 'oo',
@@ -46,9 +48,10 @@ console.log(o.hasOwnProperty('name')); // false
 
 ### ES6 Classes
 ```js
+
 // 實做建構函式
 class O {
-    construct(){
+    constructor(){
         this.name = 'oo';
         this.showName = function(){
             console.log(this.name)
