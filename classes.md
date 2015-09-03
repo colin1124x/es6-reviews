@@ -13,3 +13,16 @@ var o = {
 
 o.showName();// oo
 ```
+
+### 建構函式
+```js
+function O(){
+    this.name = 'oo';
+    this.showName = function(){
+        console.log(this.name)
+    }
+}
+
+var o = new O();
+o.showName();
+```
