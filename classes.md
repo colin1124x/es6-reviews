@@ -47,9 +47,10 @@ console.log(o.hasOwnProperty('name')); // false
 ```
 
 ### ES6 Classes
+
+實做建構函式
 ```js
 
-// 實做建構函式
 class O {
     constructor(){
         this.name = 'oo';
@@ -61,6 +62,28 @@ class O {
 
 var o = new O();
 o.showName();
+console.log(o.hasOwnProperty('name')); // true
+
+```
+
+實作建構函式 + 原形擴充
+
+```js
+class O {
+    constructor(){
+
+    }
+    get name() {
+        return 'oo';
+    }
+    showName(){
+        console.log(this.name)
+    }
+}
+
+var o = new O();
+o.showName();
 console.log(o.hasOwnProperty('name'));
 
 ```
+
