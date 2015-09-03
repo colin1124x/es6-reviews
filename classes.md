@@ -83,7 +83,7 @@ class O {
 
 var o = new O();
 o.showName();
-console.log(o.hasOwnProperty('name'));
+console.log(o.hasOwnProperty('name')); // false
 
 ```
 
