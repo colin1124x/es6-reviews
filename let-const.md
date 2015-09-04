@@ -6,6 +6,7 @@
 var x = 123;
 
 {
+    // let 將變數可視範圍限制在城市區塊內
     let x = 456;
     
     console.log('in block', x)
