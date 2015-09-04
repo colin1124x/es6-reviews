@@ -2,6 +2,7 @@
 
 控制變數作用域與不變性
 
+#### 作用域
 ```js
 var x = 123;
 
@@ -15,6 +16,7 @@ var x = 123;
 console.log('out block', x)
 ```
 
+#### 不變性
 ```js
 const x = 123;
 
