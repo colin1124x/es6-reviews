@@ -19,3 +19,15 @@ var [ret, err] = getSomeData();
 console.log(ret, err)
 
 ```
+
+變數初始化
+```js
+// origin
+var a = 1,
+    b = 2,
+    c = 3;
+    
+// ES6
+var [a, b, c] = [1, 2, 3];
+
+```
