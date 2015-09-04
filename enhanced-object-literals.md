@@ -53,8 +53,6 @@ console.log(data);
 
 // ES6
 
-
-
 var data = {
     ['x-'+uid.pull()]: 'some value...',
     ['x-'+uid.pull()]: 'some value...',
