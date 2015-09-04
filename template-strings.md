@@ -9,10 +9,11 @@ var temp = "<ul>\
     <li>email: {email}</li>\
 </ul>";
 
-document.getElementById('some-block').innerHTML = 
-    temp.
-    replase(/\{name\}/, 'real name').
-    replase(/\{phone\}/, 'real phone').
-    replase(/\{email\}/, 'real email');
+var html = temp.
+        replase(/\{name\}/, 'real name').
+        replase(/\{phone\}/, 'real phone').
+        replase(/\{email\}/, 'real email');
+    
+console.log(html)
 
 ```
