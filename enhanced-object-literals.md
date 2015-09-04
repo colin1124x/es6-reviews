@@ -58,4 +58,6 @@ var data = {
     ['x-'+uid.pull()]: 'some value...'
 }
 
+console.log(data);
+
 ```
