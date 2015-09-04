@@ -31,12 +31,31 @@ var o = {
 ```js
 // 舊寫法
 var data = {};
-// 這邊用上 jQuery 來簡化 dom select 的複雜度
-// 情境: 從 form 內的 input 建立 ajax 需要的傳遞資料 
-$('form input[name]').each(function(){
-    data[this.name.toLowerCase()] = encodeURI(this.value);
-});
 
-//
+for (var i = 0; i <= 10; i++) {
+    data['x-'+i] = 'some value...';
+}
+
+console.log(data);
+
+// ES6
+
+var uid = {
+    _: 0,
+    pull: function(){return this._++;}
+};
+
+var data = {
+    ['x-'+uid.pull()]: 'some value...',
+    ['x-'+uid.pull()]: 'some value...',
+    ['x-'+uid.pull()]: 'some value...',
+    ['x-'+uid.pull()]: 'some value...',
+    ['x-'+uid.pull()]: 'some value...',
+    ['x-'+uid.pull()]: 'some value...',
+    ['x-'+uid.pull()]: 'some value...',
+    ['x-'+uid.pull()]: 'some value...',
+    ['x-'+uid.pull()]: 'some value...',
+    ['x-'+uid.pull()]: 'some value...'
+}
 
 ```
