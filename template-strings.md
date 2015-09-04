@@ -10,10 +10,24 @@ var temp = "<ul>\
 </ul>";
 
 var html = temp.
-        replase(/\{name\}/, 'real name').
-        replase(/\{phone\}/, 'real phone').
-        replase(/\{email\}/, 'real email');
+        replace(/\{name\}/, 'real name').
+        replace(/\{phone\}/, 'real phone').
+        replace(/\{email\}/, 'real email');
     
+console.log(html)
+
+// ES6
+var name = 'real name',
+    phone = 'real phone',
+    email = 'real email',
+    html = `
+        <ul>
+            <li>name: ${name}</li>
+            <li>phone: ${phone}</li>
+            <li>email: ${email}</li>
+        </ul>
+    `;
+
 console.log(html)
 
 ```
