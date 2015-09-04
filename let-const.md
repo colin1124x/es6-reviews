@@ -8,10 +8,10 @@ var x = 123;
 {
     let x = 456;
     
-    console.log(x)
+    console.log('in block', x)
 }
 
-console.log(x)
+console.log('out block', x)
 
 
 ```
