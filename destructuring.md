@@ -13,6 +13,7 @@ function getSomeData(url) {
 }
 
 // 情境: 容錯處理
+// 仿 go 的風格
 var [ret, err] = getSomeData();
 
 console.log(ret, err)
