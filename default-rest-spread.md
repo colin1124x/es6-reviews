@@ -56,7 +56,7 @@ function sum(a, b, c) {
 }
 
 // origin
-var total = sum.apply([1, 2, 3]);
+var total = sum.apply(null, [1, 2, 3]);
 
 // ES6
 var total = sum(...[1, 2, 3])
