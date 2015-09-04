@@ -8,7 +8,7 @@ function getSomeData(url) {
         return [{data: 123}, null];
     }
     
-    return null, new Error;
+    return [null, new Error];
     
 }
 
