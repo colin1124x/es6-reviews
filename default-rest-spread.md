@@ -7,4 +7,7 @@ function greet(target = 'world')
     console.log('Hello', target);
 }
 
+greet(); // Hello world
+greet('John');
+
 ```
