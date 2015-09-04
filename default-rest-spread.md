@@ -20,7 +20,35 @@ greet('John');
 
 ```
 
-rest
+Rest
+```js
+// origin
+function merge(base) {
+    var others = Array.prototype.slice.call(arguments, 1),
+        tmp = [];
+    others.forEach(function(arr){
+        tmp = tmp.concat(arr);
+    });
+    
+    return base.concat(tmp);
+}
+
+// ES6
+function merge(base, ...others) {
+    var tmp = [];
+    others.forEach(function(arr){
+        tmp = tmp.concat(arr);
+    });
+    
+    return base.concat(tmp);
+}
+
+// test
+var b = ['a', 'b'];
+console.log(merge(b, ['c'], ['d']), b)
 ```
+
+Spread
+```js
 
 ```
