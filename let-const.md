@@ -12,6 +12,10 @@ var x = 123;
 }
 
 console.log('out block', x)
+```
 
+```js
+const x = 123;
 
+x = 456; // error
 ```
