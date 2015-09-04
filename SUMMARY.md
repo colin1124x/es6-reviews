@@ -6,3 +6,4 @@
 * [Template Strings](template-strings.md)
 * [Destructuring](destructuring.md)
 * [Default + Rest + Spread](default-rest-spread.md)
+* [Let + Const](let-const.md)
