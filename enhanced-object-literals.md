@@ -29,21 +29,31 @@ var o = {
 
 動態屬性
 ```js
+// 共用
+var uid = {
+    _: 0,
+    pull: function(){return this._++;}
+};
+
 // 舊寫法
 var data = {};
 
-for (var i = 0; i <= 10; i++) {
-    data['x-'+i] = 'some value...';
-}
+data['x-'+uid.pull()] = 'some value...';
+data['x-'+uid.pull()] = 'some value...';
+data['x-'+uid.pull()] = 'some value...';
+data['x-'+uid.pull()] = 'some value...';
+data['x-'+uid.pull()] = 'some value...';
+data['x-'+uid.pull()] = 'some value...';
+data['x-'+uid.pull()] = 'some value...';
+data['x-'+uid.pull()] = 'some value...';
+data['x-'+uid.pull()] = 'some value...';
+data['x-'+uid.pull()] = 'some value...';
 
 console.log(data);
 
 // ES6
 
-var uid = {
-    _: 0,
-    pull: function(){return this._++;}
-};
+
 
 var data = {
     ['x-'+uid.pull()]: 'some value...',
