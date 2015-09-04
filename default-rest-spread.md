@@ -50,5 +50,15 @@ console.log(merge(b, ['c'], ['d']), b)
 
 Spread
 ```js
+// 共用
+function sum(a, b, c) {
+    return a + b + c;
+}
+
+// origin
+var total = sum.apply([1, 2, 3]);
+
+// ES6
+var total = sum(...[1, 2, 3])
 
 ```
