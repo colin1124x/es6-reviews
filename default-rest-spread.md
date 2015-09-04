@@ -3,15 +3,15 @@
 預設值
 ```js
 // origin
-function greet(target = 'world')
+function greet(target)
 {
+    target = typeof target == 'undefined' ?  'world' : target;
     console.log('Hello', target);
 }
 
 // ES6
-function greet(target)
+function greet(target = 'world')
 {
-    target = typeof target == 'undefined' ?  'world' : target;
     console.log('Hello', target);
 }
 
