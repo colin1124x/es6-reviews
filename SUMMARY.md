@@ -5,4 +5,3 @@
 * [Enhanced Object Literals](enhanced-object-literals.md)
 * [Template Strings](template-strings.md)
 * [Destructuring](destructuring.md)
-* 
