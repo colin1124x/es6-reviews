@@ -24,6 +24,7 @@ Rest
 ```js
 // origin
 function merge(base) {
+    // 主要差別在這行
     var others = Array.prototype.slice.call(arguments, 1),
         tmp = [];
     others.forEach(function(arr){
