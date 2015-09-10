@@ -32,14 +32,16 @@ each(['a', 'b', 'c', 'd'], function(v, i){
     console.log(this, ''+this, v, i);
 });
 ```
-
+### ES5
 ```js
 // ES5
 ['a', 'b', 'c', 'd'].forEach(function(v, i){
     console.log(v, i);
 });
+```
 
-// 瀏覽器不支援 forEach 時,原型擴充方法(不建議)
+### 瀏覽器不支援 forEach 時,原型擴充方法(不建議)
+```js
 Array.prototype.myForEach = function(callback){
   if (typeof callback == 'function') {
     for (var i = 0, len = this.length; i < len; i++) {
