@@ -22,4 +22,4 @@ for (var i = 0; i < 5; i++) {
 }
 ```
 
-[迭代器介面]:iterator-for-of.md#interfaces
+[迭代器介面]:iterators-for-of.md#interfaces
