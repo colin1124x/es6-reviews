@@ -27,4 +27,35 @@ while ((ret = o.next()) && ret.value <= 1010) {
 }
 ```
 
+### 應用
+```js
+var Num = function(){
+    var renew = function*(){var n = 1;while (true) yield n++;},
+        g = renew();
+    
+    this.take = function(n){
+        var ret = [];
+
+        while (n > 0) {
+            ret.push(g.next().value)
+        }
+        
+        g = renew();
+        
+        return ret;
+    }
+    
+    this.filter = function(filter){
+        if (typeof filter == 'function') {
+            var _g = g;
+            g = (function(){
+                while (filter(_g.next().value));
+            })();
+        }
+    }
+}
+
+
+```
+
 [迭代器介面]:iterators-for-of.md#interfaces
