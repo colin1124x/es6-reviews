@@ -61,7 +61,7 @@ var Num = function(){
 
 var num = new Num();
 
-console.log(num.filter(function(n){return n % 2;}).take(5));
+console.log(num.filter(function(n){return n % 2;}).take(5)); // [2,4,6,8,10]
 
 ```
 
