@@ -26,7 +26,7 @@ function each(arr, callback) {
 }
 
 each(['a', 'b', 'c', 'd'], function(v, i){
-    console.log(this, v, i);
+    console.log(this, ''+this, v, i);
 });
 
 
