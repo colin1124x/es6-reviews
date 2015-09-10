@@ -88,10 +88,18 @@ var Num = function(){
 
 var num = new Num();
 
-console.log(num.filter(function(n){return n % 2 == 0;}).take(5)); // [2,4,6,8,10]
-console.log(num.isOdd().take(10)); // [1,3,5,7,9,11,13,15,17,19]
-console.log(num.isEven().from(10).take(10)); // [10,12,14,16,18,20,22,24,26,28]
-console.log(num.start(1000000).take(3)); // [1000000,1000001,1000002]
+console.log(num.filter(function(n){return n % 2 == 0;}).take(5)); 
+// [2,4,6,8,10]
+
+console.log(num.isOdd().take(10)); 
+// [1,3,5,7,9,11,13,15,17,19]
+
+console.log(num.isEven().from(10).take(10)); 
+// [10,12,14,16,18,20,22,24,26,28]
+
+console.log(num.start(1000000).take(3)); 
+// [1000000,1000001,1000002]
+
 ```
 
 [迭代器介面]:iterators-for-of.md#interfaces
