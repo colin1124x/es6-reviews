@@ -7,3 +7,17 @@ Generators 簡化迭代循環的動作流程<br>
 - 內部使用 `yield` 將值傳出
 
 
+### 簡單範例
+```js
+function* uid(n){
+    while (true) yield n++;
+}
+
+// 取得 Generator 實體物件,從1000開始
+var o = uid(1000);
+
+// for 循環 5 次
+for (var i = 0; i < 5; i++) {
+    console.log(o.next());
+}
+```
