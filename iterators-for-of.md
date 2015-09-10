@@ -62,11 +62,19 @@ Array.prototype.myForEach = function(callback){
 ```js
 var MyIterator = function(arr){
     return {
-        // 
+        // 此方法是迭代模式溝通關鍵
         [Symbol.iterator](){
-            var prev = 0, step = 1;
+            // 使用舊語法,以減少干擾
+            var prev = 0, 
+                current = 1, 
+                step = 1,
+                len = arr.length;
             return {
-            
+                next: function(){
+                    prev = current;
+                    current = current + step;
+                    return { done: current >= len, value: arr[current]};
+                }
             }
         }
     }
