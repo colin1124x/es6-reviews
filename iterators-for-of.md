@@ -1,6 +1,19 @@
 # Iterators + For .. Of
 
 迭代器模式
+```js
+// interface
+interface IteratorResult {
+  done: boolean;
+  value: any;
+}
+interface Iterator {
+  next(): IteratorResult;
+}
+interface Iterable {
+  [Symbol.iterator](): Iterator
+}
+```
 
 
 ### 傳統迭代做法
