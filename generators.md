@@ -20,6 +20,11 @@ var o = uid(1000);
 for (var i = 0; i < 5; i++) {
     console.log(o.next());
 }
+
+var ret;
+while ((ret = o.next()) && ret.value < 1010) {
+    console.log(ret)
+}
 ```
 
 [迭代器介面]:iterators-for-of.md#interfaces
