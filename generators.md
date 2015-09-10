@@ -60,6 +60,10 @@ var Num = function(){
     };
     
     this.isOdd = function(){
+        return me.filter(function(n){return n % 2;});
+    };
+    
+    this.isEven = function(){
         return me.filter(function(n){return n % 2 == 0;});
     };
 }
