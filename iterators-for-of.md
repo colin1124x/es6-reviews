@@ -63,10 +63,12 @@ Array.prototype.myForEach = function(callback){
 var MyIterator = function(arr){
     return {
         // 此方法是迭代模式溝通關鍵
+        // for .. of 的進入點, 為了取得 {next: {done: bool, value: ? }}
         [Symbol.iterator](){
             // 使用舊語法,以減少干擾
             var current = 0,
                 len = arr.length;
+
             return {
                 next: function(){
                     return { done: current >= len, value: arr[current++]};
