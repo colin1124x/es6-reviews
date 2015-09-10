@@ -86,5 +86,5 @@ for (var i of arr) {
 
 ```
 
-迭代模式是建立在 duck-typed interfaces (鴨式定型) 的基礎上.
+迭代模式是建立在 duck-typed interfaces (鴨式定型) 的基礎上.<br>
 簡單說 "叫聲像鴨子,走起路來像鴨子,那就可以把它當鴨子"
