@@ -41,7 +41,18 @@ each(['a', 'b', 'c', 'd'], function(v, i){
 
 // 瀏覽器不支援 forEach 時,原型擴充方法(不建議)
 Array.prototype.myForEach = function(callback){
-    console.log(this);
+  if (typeof callback == 'function') {
+    for (var i = 0, len = this.length; i < len; i++) {
+      callback.call(this, this[i], i)
+    }
+  }
+
+  return this;
 };
+
+['a', 'b', 'c'].myForEach(function(v, i){
+  
+  console.log(this, v, i)
+});
 
 ```
