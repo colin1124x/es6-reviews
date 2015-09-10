@@ -50,7 +50,7 @@ Array.prototype.myForEach = function(callback){
   return this;
 };
 
-['a', 'b', 'c'].myForEach(function(v, i){
+['a', 'b', 'c', 'd'].myForEach(function(v, i){
   console.log(this, v, i)
 });
 
