@@ -13,8 +13,8 @@ function* uid(n){
     while (true) yield n++;
 }
 
-// 取得 Generator 實體物件,從1000開始
-var o = uid(1000);
+// 取得 Generator 實體物件,從1001開始
+var o = uid(1001);
 
 // for 循環 5 次
 for (var i = 0; i < 5; i++) {
