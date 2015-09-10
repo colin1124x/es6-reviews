@@ -57,3 +57,18 @@ Array.prototype.myForEach = function(callback){
 });
 
 ```
+
+### ES6
+```js
+var MyIterator = function(arr){
+    return {
+        // 
+        [Symbol.iterator](){
+            var prev = 0, step = 1;
+            return {
+            
+            }
+        }
+    }
+}
+```
