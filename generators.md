@@ -31,7 +31,7 @@ while ((ret = o.next()) && ret.value <= 1010) {
 ```js
 var Num = function(){
     var start = 1,
-        renew = function*(){var n = start;while (true) yield n++;},
+        renew = function*(){while (true) yield start++;},
         g = renew(),
         me = this;
     
@@ -79,6 +79,7 @@ var Num = function(){
     
     this.start = function(i){
         start = parseInt(1, 10) || 0;
+        g 
         return me;
     };
 }
