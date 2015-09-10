@@ -22,7 +22,7 @@ for (var i = 0; i < 5; i++) {
 }
 
 var ret;
-while ((ret = o.next()) && ret.value < 1010) {
+while ((ret = o.next()) && ret.value <= 1010) {
     console.log(ret)
 }
 ```
