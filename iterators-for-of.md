@@ -33,6 +33,6 @@ each(['a', 'b', 'c', 'd'], function(v, i){
 ```js
 // ES5
 ['a', 'b', 'c', 'd'].forEach(function(v, i){
-    console.log(this, ''+this, v, i);
+    console.log(v, i);
 });
 ```
