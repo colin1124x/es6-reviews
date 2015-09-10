@@ -31,7 +31,8 @@ while ((ret = o.next()) && ret.value <= 1010) {
 ```js
 var Num = function(){
     var renew = function*(){var n = 1;while (true) yield n++;},
-        g = renew();
+        g = renew(),
+        me = this;
     
     this.take = function(n){
         var ret = [];
@@ -43,7 +44,7 @@ var Num = function(){
         g = renew();
         
         return ret;
-    }
+    };
     
     this.filter = function(filter){
         if (typeof filter == 'function') {
@@ -55,13 +56,17 @@ var Num = function(){
                 }
             })();
         }
-        return this;
-    }
+        return me;
+    };
+    
+    this.isOdd = function(){
+        return me.filter(function(n){return n % 2 == 0;});
+    };
 }
 
 var num = new Num();
 
-console.log(num.filter(function(n){return n % 2;}).take(5)); // [2,4,6,8,10]
+console.log(num.filter(function(n){return n % 2 == 0;}).take(5)); // [2,4,6,8,10]
 
 ```
 
