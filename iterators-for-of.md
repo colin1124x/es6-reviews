@@ -40,7 +40,7 @@ each(['a', 'b', 'c', 'd'], function(v, i){
 });
 ```
 
-### 瀏覽器不支援 forEach 時,原型擴充方法(不建議)
+### 瀏覽器不支援 forEach 時,原型擴充方法(不建議使用)
 ```js
 Array.prototype.myForEach = function(callback){
   if (typeof callback == 'function') {
