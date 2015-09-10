@@ -1,15 +1,19 @@
 # Iterators + For .. Of
 
 迭代器模式
+### interface
 ```js
-// interface
+// next 方法回傳結構體
 interface IteratorResult {
   done: boolean;
   value: any;
 }
+// 迭代器必須實做此方法
 interface Iterator {
   next(): IteratorResult;
 }
+
+// for .. of 進入點,利用此方法取得迭代器物件
 interface Iterable {
   [Symbol.iterator](): Iterator
 }
