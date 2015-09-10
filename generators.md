@@ -69,6 +69,10 @@ var Num = function(){
     this.isEven = function(){
         return me.filter(function(n){return n % 2 == 0;});
     };
+    
+    this.from = function(i){
+        return me.filter(function(n){return n >= i;});
+    };
 }
 
 var num = new Num();
