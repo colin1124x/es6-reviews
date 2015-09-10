@@ -1,7 +1,7 @@
 # Iterators + For .. Of
 
 迭代器模式
-### interface
+### interfaces
 ```js
 // next 方法回傳結構體
 interface IteratorResult {
