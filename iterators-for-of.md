@@ -65,15 +65,11 @@ var MyIterator = function(arr){
         // 此方法是迭代模式溝通關鍵
         [Symbol.iterator](){
             // 使用舊語法,以減少干擾
-            var prev = 0, 
-                current = 1, 
-                step = 1,
+            var current = 0,
                 len = arr.length;
             return {
                 next: function(){
-                    prev = current;
-                    current = current + step;
-                    return { done: current >= len, value: arr[current]};
+                    return { done: current >= len, value: arr[current++]};
                 }
             }
         }
