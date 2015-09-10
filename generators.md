@@ -51,9 +51,7 @@ var Num = function(){
             g = (function*(){
                 while (true) {
                     var v = _g.next().value;
-                    if (filter(v)) {
-                        yield v;
-                    }
+                    if (filter(v)) yield v;
                 }
             })();
         }
