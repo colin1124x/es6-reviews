@@ -78,7 +78,7 @@ var Num = function(){
     };
     
     this.start = function(i){
-        start = parseInt(1, 10) || 0;
+        start = parseInt(i, 10) || 0;
         g 
         return me;
     };
