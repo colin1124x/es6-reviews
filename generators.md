@@ -48,7 +48,7 @@ var Num = function(){
     this.filter = function(filter){
         if (typeof filter == 'function') {
             var _g = g;
-            g = (function(){
+            g = (function*(){
                 while (true) {
                     var v = _g.next().value;
                     if (filter(v)) {
