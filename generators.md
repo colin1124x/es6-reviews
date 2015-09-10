@@ -49,12 +49,21 @@ var Num = function(){
         if (typeof filter == 'function') {
             var _g = g;
             g = (function(){
-                while (filter(_g.next().value));
+                while (true) {
+                    var v = _g.next().value();
+                    if (filter(v)) {
+                        yield v;
+                    }
+                }
             })();
         }
+        return this;
     }
 }
 
+var num = new Num();
+
+console.log(num.filter(function(n){return n % 2;}).take(5));
 
 ```
 
