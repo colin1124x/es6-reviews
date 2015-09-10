@@ -36,7 +36,7 @@ var Num = function(){
     this.take = function(n){
         var ret = [];
 
-        while (n > 0) {
+        while (n-- > 0) {
             ret.push(g.next().value)
         }
         
