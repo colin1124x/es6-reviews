@@ -79,4 +79,11 @@ var MyIterator = function(arr){
         }
     }
 }
+
+var arr = MyIterator(['a', 'b', 'c', 'd']);
+
+for (var i of o) {
+    console.log(i);
+}
+
 ```
