@@ -50,7 +50,7 @@ var Num = function(){
             var _g = g;
             g = (function(){
                 while (true) {
-                    var v = _g.next().value();
+                    var v = _g.next().value;
                     if (filter(v)) {
                         yield v;
                     }
