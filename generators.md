@@ -30,7 +30,8 @@ while ((ret = o.next()) && ret.value <= 1010) {
 ### 應用
 ```js
 var Num = function(){
-    var renew = function*(){var n = 1;while (true) yield n++;},
+    var start = 1,
+        renew = function*(){var n = start;while (true) yield n++;},
         g = renew(),
         me = this;
     
@@ -70,8 +71,13 @@ var Num = function(){
         return me.filter(function(n){return n % 2 == 0;});
     };
     
+    // 用過濾器來制定起點比較耗效能
     this.from = function(i){
         return me.filter(function(n){return n >= i;});
+    };
+    
+    this.start = function(i){
+        start = parseInt(1, 10) || 0;
     };
 }
 
