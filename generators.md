@@ -43,6 +43,7 @@ var Num = function(){
         }
         
         g = renew();
+        start = 1;
         
         return ret;
     };
