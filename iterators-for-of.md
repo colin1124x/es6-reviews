@@ -51,7 +51,6 @@ Array.prototype.myForEach = function(callback){
 };
 
 ['a', 'b', 'c'].myForEach(function(v, i){
-  
   console.log(this, v, i)
 });
 
