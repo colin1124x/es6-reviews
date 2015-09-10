@@ -1,10 +1,10 @@
 # Iterators + For .. Of
 
-迭代器
+迭代器模式
 
+
+### 傳統迭代做法
 ```js
-// 傳統迭代做法
-
 var arr = ['a', 'b', 'c', 'd'];
 
 for (var i = 0, len = arr.length; i < len; i++) {
@@ -16,8 +16,8 @@ for (var i = 0, len = arr.length; i < len; i++) {
 // 2. 在js scope 實做下暴露出過多程序不須關心的拋棄式變數
 ```
 
+### 傳統進階做法
 ```js
-// 傳統進階做法
 function each(arr, callback) {
     
     if (typeof callback != 'function') return;
