@@ -46,6 +46,7 @@ var Num = function(){
         return ret;
     };
     
+    // 過濾器
     this.filter = function(filter){
         if (typeof filter == 'function') {
             var _g = g;
@@ -59,10 +60,12 @@ var Num = function(){
         return me;
     };
     
+    // 過濾 奇數
     this.isOdd = function(){
         return me.filter(function(n){return n % 2;});
     };
     
+    // 過濾 偶數
     this.isEven = function(){
         return me.filter(function(n){return n % 2 == 0;});
     };
