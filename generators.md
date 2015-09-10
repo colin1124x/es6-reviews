@@ -77,6 +77,8 @@ var Num = function(){
         return me.filter(function(n){return n >= i;});
     };
     
+    // 直接竄改 Generator 參照的變數會比較省效能
+    // 不過會增加複雜度
     this.start = function(i){
         start = parseInt(i, 10) || 0;
         g 
