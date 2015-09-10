@@ -3,7 +3,7 @@
 迭代器
 
 ```js
-// 傳統迭代做法 1
+// 傳統迭代做法
 
 var arr = ['a', 'b', 'c', 'd'];
 
@@ -18,7 +18,21 @@ for (var i = 0, len = arr.length; i < len; i++) {
 
 ```js
 // 傳統進階做法
+function each(arr, callback) {
+    callback = typeof callback == 'function' ? callback : function(){};
+    for (var i = 0, len = arr.length; i < len; i++) {
+        callback.call(arr[i], arr[i], i);
+    }
+}
+
+each(['a', 'b', 'c', 'd'], function(v, i){
+    console.log(this, v, i);
+});
 
 
+```
+
+```js
+// ES5
 
 ```
