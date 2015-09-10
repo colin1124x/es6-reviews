@@ -23,7 +23,7 @@ function each(arr, callback) {
     if (typeof callback != 'function') return;
     
     for (var i = 0, len = arr.length; i < len; i++) {
-        callback.call(arr[i], arr[i], i);
+        callback.call(arr, arr[i], i);
         //callback(arr[i], i); // ES5 行為
     }
 }
