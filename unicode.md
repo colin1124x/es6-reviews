@@ -7,13 +7,13 @@
 "𐮷".length == 2
 
 
-"𐮷".charCodeAt().toString(16);
+"𐮷".charCodeAt(0).toString(16);
 // d842, 第一字節的編碼轉16進位
 
-"𐮷"[1].charCodeAt().toString(16);
+"𐮷".charCodeAt(1).toString(16);
 // dfb7, 第二字節的編碼轉16進位
 
-"𐮷".codePointAt().toString(16);
+"𐮷".codePointAt(0).toString(16);
 // 20bb7
 
 // 由上方導出 "𐮷"=="\ud842\udfB7"
