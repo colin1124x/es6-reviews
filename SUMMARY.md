@@ -11,3 +11,5 @@
 * [Generators](generators.md)
 * [Unicade](unicode.md)
 * [Modules](modules.md)
+* [Module Loaders](module-loaders.md)
+* [Map + Set + WeakMap + WeakSet](map-set-weakmap-weakset.md)
