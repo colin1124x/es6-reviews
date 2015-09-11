@@ -19,8 +19,14 @@
 // 由上方導出 "𐮷"=="\ud842\udfB7"
 "\u{20bb7}" == "\ud842\udfB7" // true
 
-// 反推
-String.fromCharCode(0x20bb7); // 無法找到正確對應的編碼位置
+// * 編碼反推字符表
+
+// 使用 fromCharCode
+String.fromCharCode(0x20bb7); 
+// 無法找到正確對應的編碼位置
+
+// 使用 fromCodePoint
+String.fromCodePoint(0x20bb7);
 
 ```
 
