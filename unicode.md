@@ -27,6 +27,7 @@ String.fromCharCode(0x20bb7);
 
 // 使用 fromCodePoint
 String.fromCodePoint(0x20bb7);
+// 可正確找到字符
 
 ```
 
