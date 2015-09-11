@@ -9,3 +9,5 @@
 * [Let + Const](let-const.md)
 * [Iterators + For .. Of](iterators-for-of.md)
 * [Generators](generators.md)
+* [Unicade](unicode.md)
+* [Modules](modules.md)
